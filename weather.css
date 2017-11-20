@@ -1,0 +1,484 @@
+/* ANIMATIONS FOR ICONS */
+  
+/*SPINNER*/
+@keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+      transform-origin: 50% 50%;
+    }
+    50% {
+      transform: rotate(180deg);
+      transform-origin: 50% 50%;
+    }
+    100% {
+      transform: rotate(360deg);
+      transform-origin: 50% 50%;
+    }
+  }
+  
+  /* END SPINNER */
+  
+    /* SUN */
+  @keyframes sunspin {
+    0% {
+      transform: rotate(0deg);
+      transform-origin: 50% 50%;
+    }
+    50% {
+      transform: rotate(180deg);
+      transform-origin: 50% 50%;
+    }
+    100% {
+      transform: rotate(360deg);
+      transform-origin: 50% 50%;
+    }
+  }
+  
+  @keyframes sunpulse {
+    0%,
+    100% {
+      transform: scale(1, 1);
+      transform-origin: center center;
+    }
+    50% {
+      transform: scale(0.9, 0.9);
+      transform-origin: center center;
+      /*fill: ##ffff00;*/
+    }
+  }
+  /* END SUN */
+  
+  /* CLOUDS ANIMATION*/
+  @keyframes silverlining {
+    0%, 100% {fill-opacity: 0.7;}
+    50% {fill-opacity: 1;}
+  }
+  /* END CLOUDS ANIMATION*/
+  
+  /* RAIN ANIMATION*/
+  @keyframes raindrop {
+    from {transform: scaleY(1);}
+    to {transform: scaleY(1.1);}
+  }
+  /* END OF RAIN ANIMATION*/
+  
+  /*STRONG WIND*/
+  @keyframes flyout {
+    from {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    to {
+      transform: translate(20em, -20em) rotate(120deg);
+    }
+  }
+  
+  @keyframes blow {
+    0% {transform: translate(-0.5em, 0);}
+    100% {
+      transform: translate(0.1em, 0);
+      stroke-dashoffset: 50;
+      fill: #fff;
+    }
+  }
+  
+  @keyframes windcurl {
+    from {
+      transform-origin: 25% 25%;
+      transform: rotate(0deg);
+    }
+    to {
+      transform-origin: 25% 25%;
+      transform: rotate(-5deg);}
+  }
+  /*END OF STRONG WIND*/
+  
+  /*BREEZE & WIND ANIMATION*/
+  @keyframes windy {
+    0% {
+      transform: translate(-2em, 0);
+    }
+    75% {
+      transform: translate(2em, 0);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  /* END OF BREEZE & WIND ANIMATION*/
+  
+  /* SNOW ANIMATION */
+  @keyframes snowfall {
+    to {transform: translate(0, 0.3em);}
+  }
+  /* END OF SNOW ANIMATION */
+  
+  /* MIST ANIMATION */
+  @keyframes misty {
+    0%, 100% {fill-opacity: 1;}
+    50% {fill-opacity: 0.6;}
+  }
+  /* END OF MIST ANIMATION */
+  
+  /* STORM ANIMATION */
+  @keyframes lightening {
+    0% {fill: #111;}
+    10% {fill: yellow;}
+    20% {fill: #111;}
+    30% {fill: yellow;}
+    40% {fill: #111;}
+    70% {fill: #555;}
+    100% {fill: #000;}
+  }
+  /* END OF STORM ANIMATION */
+  
+  /* TORNADO ANIMATION */
+  @keyframes nado {
+    0%, 50%, 100% {transform: translate(0, 0);}
+    25% {transform: translate(-0.3em, 0);}
+    75% {transform: translate(0.3em, 0);}
+  }
+  
+  @keyframes shake {
+    0%, 100% {transform: rotate(-5deg);}
+    50% {transform: rotate(5deg);}
+  }
+  /* END OF TORNADO ANIMATION */
+  
+  /* END OF ICON KEYFRAMES */
+  
+  body {
+    background: #272727;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    box-size: border-box;
+    height: 100%;
+    letter-spacing: 0.08em;
+  }
+  
+  main {
+    width: 65%;
+    margin: 5em auto;
+    text-align: center;
+    font-size: 1.2em;
+    background: #000;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0.05em 0.05em 1em #e5e5e5;
+  }
+  
+  h1 {
+    font-family: 'Pontano Sans', sans-serif;
+    font-size: 2.3em;
+    letter-spacing: 0.015em;
+  }
+  
+  figure {
+    margin: 0;
+  }
+  
+  svg {
+    overflow: visible !important;
+  }
+  
+  #openSearch {
+    color: #ffff00;
+    font-size: 0.6em;
+    text-decoration: underline;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #openSearch:hover,
+  #openSearch:visited {
+    color: #daff72;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 0.8em;
+  }
+  
+  .coords {}
+  
+  #weatherIcon {
+    fill: #fff;
+  }
+  
+  input#city {
+    padding: 0.2em 0.2em;
+    /*box-shadow: 0.05em 0.05em 0.05em #5a5a5a inset;*/
+    border: 0.04em solid #ecee2a;
+  }
+  
+  #displayCity {
+    text-transform: uppercase;
+  }
+  
+  input, button {
+    margin-bottom: 0.3em;
+  }
+  
+  #loc_search {
+    display: none;
+    margin-bottom: 1.2em;
+  }
+  
+  .btn {
+    background-color: #daff72;
+    border-color: #daff72;
+    color: #272727;
+  }
+  
+  .btn:hover,
+  btn:active {
+    background-color: #ffff00;
+    border-color: #ffff00;
+  }
+  
+  #weatherIcon {
+    fill: #fff;
+    width: 6em;
+    margin: 0.6em auto -1.2em;
+    /*display: none;*/
+  }
+  
+  .spinner {
+    fill: #fff;
+    width: 3em;
+    padding-bottom: 1.5em;
+  }
+  
+  #innerSpin {
+    animation: spinner 0.5s infinite linear;
+  }
+  
+  #middleSpin {
+    animation: spinner 1s infinite ease-in-out;
+  }
+  
+  #outerSpin {
+    animation: spinner 1s infinite linear;
+  }
+  
+  
+  /* APPLICATION OF WEATHER ICON ANIMATIONS AND OTHER WEATHER ICON STYLING */
+  #sunrays {
+    animation: sunspin 15s infinite linear;
+  }
+  
+  #sunbody {
+    animation: sunpulse 5s infinite linear;
+  }
+  
+  #clouds, #raincloud {
+    animation: silverlining 10s infinite ease-in-out;
+    fill: #fff;
+  }
+  
+  #clouds {
+  fill: url("#cloudgrad");
+  }
+  
+  #raincloud, #raindrops {
+  fill: url("#raingrad");
+  }
+  
+  #drop1, #drop5 {
+    animation: raindrop 0.7s infinite ease-out;
+    /*fill: #d9fdfc;*/
+  }
+  
+  #drop2 {
+    animation: raindrop 0.7s 0.3s infinite ease-out;
+  }
+  
+  #drop4, #drop3 {
+    animation: raindrop 0.7s 0.6s infinite ease-out;
+  }
+  
+  #umbrellainwind {
+    animation: flyout 2s 1s 1 ease-in;
+  }
+  
+  #gust {
+    fill: #000;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 220;
+  }
+  
+  #gust {
+    animation: blow 2s infinite ease-in;
+  }
+  
+  #gusttop {
+    animation: windcurl 0.5s 1.5s infinite linear;
+  }
+  
+  #gustmid {
+    animation: windcurl 1s 1s infinite linear;
+  }
+  
+  #breeze {
+    animation: windy 2.5s 1 ease-in
+  }
+  
+  #flaketop {
+    animation: snowfall 5s infinite linear;
+  }
+  
+  #flakemid {
+    animation: snowfall 5s 1s infinite linear;
+  }
+  
+  #flakebottom {
+    animation: snowfall 5s 1.5s infinite linear;
+  }
+  
+  #carinmist {
+    animation: silverlining 5s infinite ease-in-out;
+    fill: #dddddd;
+  }
+  
+  #mist {
+    animation: misty 5s infinite ease-in-out;
+  }
+  
+  #stormwind {
+    fill: #999;
+    animation: silverlining 3s infinite ease-in-out,
+               sunpulse 6s infinite ease-out;
+  }
+  
+  #stormclouds {
+    animation: sunpulse 5s infinite ease-in,
+               lightening 5s infinite linear;
+  }
+  
+  #Bottomnado {
+    animation: nado 2s infinite linear;
+  }
+  
+  #nado2 {
+    animation: nado 2s 0.1s infinite linear;
+  }
+  
+  #nado3 {
+    animation: nado 2s 0.2s infinite linear;
+  }
+  
+  #nado4 {
+    animation: nado 2s 0.3s infinite linear;
+  }
+  
+  #nado5 {
+    animation: nado 2s 0.4s infinite linear;
+  }
+  
+  #nado6 {
+    animation: nado 2s 0.5s infinite linear;
+  }
+  
+  #nado7 {
+    animation: nado 2s 0.6s infinite linear;
+  }
+  
+  #nado8 {
+    animation: nado 2s 0.7s infinite linear;
+  }
+  
+  #nado9 {
+    animation: nado 2s 0.8s infinite linear;
+  }
+  
+  #Topnado {
+    animation: nado 2s 0.9s infinite linear;
+  }
+  
+  #House {
+    transform-origin: 50% 50%;
+    animation: shake 2s infinite ease-in;
+  }
+  
+  /* END OF WEATHER ICON STYLING */
+  
+  #thermomF,
+  #thermomC {
+    overflow: visible;
+  }
+  
+  #temp {
+    font-size: 2.2em;
+  }
+  
+  #tempPanel {
+    display: none;
+    margin: 0 auto;
+  }
+  
+  .activeTemp {
+    position: relative;
+    margin-left: 1.8em;
+    margin-bottom: -1.1em;
+  }
+  
+  #tempPanel * {
+    display: inline-block/*none*/;
+    overflow: visible;
+  }
+  
+  a.activeDeg {}
+  
+  .thermInactive {
+    fill: #898989;
+    width: 1.5em;
+    position: relative;
+    top: 0.5em;
+    left: 1em;
+    display: inline;
+  }
+  
+  .thermActive {
+    fill: #fff;
+    width: 2.5em;
+    position: relative;
+    top: 0.9em;
+    left: 0.25em;
+    overflow: visible;
+    display: inline;
+  }
+  
+  .inactiveDeg {
+    transform: scale(1.7, 1.7) translate(-0.6em, -0.18em);
+  }
+  
+  .activeDeg {
+    transform: scale(1.2, 1.2) translate(-0.3em, 0em);
+  }
+  
+  .thermActive #mercury,
+  .thermActive #tempbars {
+    fill: #f46300;
+  }
+  
+  .thermInactive:hover .inactiveDeg,
+  .thermInactive:hover #mercury {
+    fill: #ffff00;
+  }
+  
+  #weatherDescrip {
+    display: none;
+  }
+  
+  @media screen and (max-width: 510px) {
+    h1 {
+      font-size: 1.5em;
+    }
+    .thermInactive {
+      left: 0.5em;
+    }
+    .activeTemp {
+      margin:0;
+    }
+  }
+  
