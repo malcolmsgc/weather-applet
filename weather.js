@@ -464,7 +464,7 @@ storm : {
             locationOn = "Bananas",
             locationOptions = {
               enableHighAccuracy: false,
-              timeout: 5000,
+              timeout: 8000,
               maximumAge: 0
               },
             currentLatitude,
