@@ -5,7 +5,7 @@ storm : {
           svg: ''}
           */
 
-          var weatherUrl = "http://api.openweathermap.org/data/2.5/weather?APPID=359d9c0c6488457ce23b7fcf4a857ff7&units=metric",
+          var weatherUrl = "https://api.openweathermap.org/data/2.5/weather?APPID=359d9c0c6488457ce23b7fcf4a857ff7&units=metric",
           displayCity = document.getElementById("displayCity"),
           icons = {
             thermC : {
